@@ -35,6 +35,9 @@ body {
     background: url(../img/bg.png) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
 }
 
 .wrapper {
@@ -164,6 +167,7 @@ input[type="email"] {
 footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 footer > section {
@@ -175,4 +179,25 @@ footer > section {
 footer > section > article {
     min-width: 100px;
     max-width: 200px;
+}
+
+.social-links {
+    margin: 50px 0;
+}
+
+.social-links > a {
+    border: 20px solid black;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+    line-height: 16px;
+}
+
+.social-links > a:hover {
+    border: 20px solid #91ac27;
+    background-color: #91ac27;
 }
