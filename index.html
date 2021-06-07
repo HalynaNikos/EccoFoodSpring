@@ -4,7 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Eco Food</title>
+
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
+
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
@@ -29,11 +32,18 @@
                     </a>
                     <button class="button">Clear cart</button>
                 </section>
-                <nav>
-                    <a href="#" class="link">Home</a>
-                    <a href="#" class="link">Catalog</a>
-                    <a href="#" class="link">About us</a>
-                    <a href="#" class="link">Contact</a>
+                <nav id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                        <li><a href="#" class="link">Home</a></li>
+                        <li><a href="#" class="link">Catalog</a></li>
+                        <li><a href="#" class="link">About us</a></li>
+                        <li><a href="#" class="link">Contact</a></li>
+                    </ul>
                 </nav>
             </header>
             <main>
@@ -146,7 +156,9 @@
                         </p>
                     </article>
                     <article>
-                        <h3><i class="fab fa-codepen"></i>Healing with Honey</h3>
+                        <h3>
+                            <i class="fab fa-codepen"></i>Healing with Honey
+                        </h3>
                         <p>
                             Praesent vestiblum molestie lacus. Aenean nonummy
                             hendrerit.

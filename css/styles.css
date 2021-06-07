@@ -10,6 +10,8 @@
 
     font-family: "Roboto", sans-serif;
     font-family: "Montserrat", sans-serif;
+
+    box-sizing: border-box;
 }
 html {
     font-size: 16px;
@@ -202,7 +204,7 @@ footer > section > article {
     background-color: #91ac27;
 }
 
-@media only screen and (max-width: 425px) {
+@media (max-width: 425px) {
     body {
         background: none;
     }
