@@ -10,6 +10,8 @@
 
     font-family: "Roboto", sans-serif;
     font-family: "Montserrat", sans-serif;
+
+    box-sizing: border-box;
 }
 html {
     font-size: 16px;
@@ -200,4 +202,33 @@ footer > section > article {
 .social-links > a:hover {
     border: 20px solid #91ac27;
     background-color: #91ac27;
+}
+
+@media (max-width: 425px) {
+    body {
+        background: none;
+    }
+
+    .wrapper {
+        margin: 0;
+        padding: 5%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header > a {
+        margin-bottom: 20px;
+    }
+
+    header > section {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+    }
 }
