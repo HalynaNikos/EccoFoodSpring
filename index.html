@@ -28,6 +28,7 @@
         <!-- <script defer src="js/testJs.js"></script> -->
         <script defer src="js/loadProducts.js"></script>
         <script src="js/jsButtons.js" defer></script>
+        <script src="js/jsCart.js" defer></script>
     </head>
     <body>
         <div class="wrapper">
@@ -38,9 +39,9 @@
                     <a href="#" class="link" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Cart
                         <i class="fas fa-shopping-basket"></i>
-                        (<span>0</span>)
+                        (<span id="count">0</span>)
                     </a>
-                    <button class="button">Clear cart</button>
+                    <button class="button" id="clear-cart">Clear cart</button>
                 </section>
                 <nav id="menuToggle">
                     <input type="checkbox" />
@@ -58,7 +59,7 @@
             </header>
             <main>
                 <hr />
-                <button class="yellowButton">-></button>
+                <button class="yellowButton" id="button-top">-></button>
                 <section>
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -151,7 +152,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                    ...
+                        <table id="basket"></table>
+                        <div>Total price: $<span id="total-cart">0</span></div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
